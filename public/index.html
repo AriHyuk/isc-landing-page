@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISC Landing Page</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/cosutum.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!-- FontAwesome Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
+    <!-- jQuery & Slick JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav
+      class="bg-white p-4 fixed w-full top-0 shadow-lg z-50 transition-all duration-300"
+    >
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo dan Nama -->
+        <div class="flex items-center gap-2">
+          <img src="./images/logo.png" alt="ISC Logo" class="h-10" />
+          <div class="flex flex-col">
+            <h1 class="text-xl md:text-2xl font-bold leading-tight">ISC</h1>
+            <p class="text-sm">Informatics Study Club</p>
+          </div>
+        </div>
+
+        <!-- Tombol Menu Mobile -->
+        <button
+          id="menu-toggle"
+          class="md:hidden text-2xl focus:outline-none"
+          aria-label="Toggle Menu"
+        >
+          ☰
+        </button>
+
+        <!-- Menu -->
+        <ul
+          id="menu"
+          class="hidden md:flex gap-6 text-gray-600 bg-white md:bg-transparent fixed md:static top-16 left-0 w-full md:w-auto p-4 md:p-0 shadow-lg md:shadow-none"
+        >
+        <li>
+          <a
+            href="#home"
+            class="hover:text-gray-900 transition-colors duration-300"
+            >LandingPage</a
+          >
+        </li>
+          <li>
+            <a
+              href="#about"
+              class="hover:text-gray-900 transition-colors duration-300"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#divisions"
+              class="hover:text-gray-900 transition-colors duration-300"
+              >Divisions</a
+            >
+          </li>
+          <li>
+            <a
+              href="#gallery"
+              class="hover:text-gray-900 transition-colors duration-300"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              href="#faq"
+              class="hover:text-gray-900 transition-colors duration-300"
+              >FAQ</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="hover:text-gray-900 transition-colors duration-300"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" 
+      class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center relative pt-16 "
+      style="background-image: url('./images/hero.jpg')"
+    >
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+
+      <!-- Content -->
+      <div class="relative z-10 text-white p-6 mt-12">
+        <h1 class="text-4xl md:text-6xl font-bold">
+          <span class="text-blue-500">ISC</span>
+        </h1>
+        <h3 class="text-2xl md:text-4xl font-semibold mt-4">
+          Informatic Study Club
+        </h3>
+        <p class="mt-6 text-lg md:text-xl max-w-xl">
+          Mari bergabung, terhubung, dan tumbuh bersama kami di Informatic Study
+          Club.
+        </p>
+        <a
+          href="#about"
+          class="mt-8 inline-block px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-full"
+        >
+          Explore Now
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto py-16 px-6">
+      <div class="flex flex-col md:flex-row items-center gap-20 py-16">
+        <!-- Bagian Kiri (Text) -->
+        <div class="md:w-1/2 text-center md:text-left animate-fade-in">
+          <h2 class="text-3xl font-bold text-gray-800">
+            About <span class="text-blue-500 py-16">ISC</span>
+          </h2>
+          <p class="mt-4 text-lg text-gray-600">
+            ISC atau Informatic Study Club adalah komunitas atu club belajar
+            yang ada di Program Study Informatika Universitas Pamulang. ISC
+            berfokus dalam pengembangan skill mahasiswa dalam bidang teknik
+            infomatika, ISC memiliki 3 divisi yaitu Web Development, UI/UX dan
+            Data Science diluar 3 bidang itu isc juga memiliki English Up Skill
+            yang dibuat untuk kamu yang ingin meningkatkan dan belajar bahasa
+            Inggris.
+            <br />
+            Jika kamu ingin belajar dan mengembangkan skill kamu dalam bidang
+            teknik informatika, ISC adalah tempat yang tepat untuk kamu.
+          </p>
+          <a
+            href="#contact"
+            class="mt-6 inline-block px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg shadow-lg"
+          >
+            Join Us
+          </a>
+        </div>
+
+        <!-- Bagian Kanan (Gambar/Logo) -->
+        <div class="md:w-1/2 flex justify-center">
+          <img
+            src="./images/logo.png"
+            alt="About ISC"
+            class="w-72 md:w-96 rounded-lg shadow-lg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Divisions Section -->
+    <section id="divisions" class="bg-gray-200 py-16 px-6">
+      <div class="container mx-auto text-center py-16">
+        <h2 class="text-3xl font-bold py-14" >Divisions</h2>
+        <div class="grid md:grid-cols-3 gap-6 mt-8">
+          <div class="p-6 bg-white shadow-lg rounded-lg">
+            <img src="./images/web-dev.jpeg" alt="" />
+            <h3 class="text-xl font-bold">Web Development</h3>
+            <p class="mt-2 text-gray-600">
+              Web Development adalah salah satu divisi yang ada di ISC, Sesuai
+              namanya divisi ini berfokus dalam pengembangan web mau bagian
+              front-end maupun back-end. Jika kamu memiliki minat dalam
+              pengembangan web, maka divisi ini cocok untukmu.
+            </p>
+          </div>
+          <div class="p-6 bg-white shadow-lg rounded-lg">
+            <img src="./images/ui-ux.jpeg" alt="" />
+            <h3 class="text-xl font-bold">Ui/UX</h3>
+            <p class="mt-2 text-gray-600">
+              UI/UX adalah divisi yang bergerak dalam lingkup design untuk user
+              interface(UI) ataupun User Experience(UX). Jika kamu memiliki
+              minat dalam design, dan ingin mengembangkan minat dan bakat kamu
+              divisi ini sangat cocok untuk kamu.
+            </p>
+          </div>
+          <div class="p-6 bg-white shadow-lg rounded-lg">
+            <img src="./images/data-science.jpeg" alt="" />
+            <h3 class="text-xl font-bold">Data Science</h3>
+            <p class="mt-2 text-gray-600">
+              Sesuai dengan namanya Data Science adalah divisi yang berfokus
+              dalam lingkup pengolahan data. Jika kamu memiiki minat dan ingin
+              mengembangkan minat dan bakat kamu divisi ini sangat cocok untuk
+              kamu.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="container mx-auto py-16 px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 py-16">Gallery</h2>
+
+      <!-- Baris Atas (3 Gambar) -->
+      <div class="slick-slider slick-top w-full max-w-5xl mx-auto mb-8">
+        <!-- Card 1 -->
+        <div class="gallery-card">
+          <img
+            src="./images/galery-1.jpeg"
+            alt="Gallery Image 1"
+            loading="lazy"
+          />
+          <div class="p-4 bg-white">
+            <h3 class="font-bold">
+              Kerja sama dengan Dinas Pendidikan Tangsel
+            </h3>
+            <p class="text-sm text-gray-600">
+              kerja sama ini dilalkukan saat ISC mengadakan lomba cerdas cermat
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="gallery-card">
+          <img
+            src="./images/galery-2.jpeg"
+            alt="Gallery Image 2"
+            loading="lazy"
+          />
+          <div class="p-4 bg-white">
+            <h3 class="font-bold">Dq Lab</h3>
+            <p class="text-sm text-gray-600">Sesi kuliah umum bersama dq lab</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="gallery-card">
+          <img
+            src="./images/galery-3.jpeg"
+            alt="Gallery Image 3"
+            loading="lazy"
+          />
+          <div class="p-4 bg-white">
+            <h3 class="font-bold">Divisi Web Dev</h3>
+            <p class="text-sm text-gray-600">
+              Foto bersama setelah keaas selesai
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 4 (Duplikat untuk carousel kontinyu) -->
+        <div class="gallery-card">
+          <img
+            src="./images/galery-5.jpeg"
+            alt="Gallery Image 1"
+            loading="lazy"
+          />
+          <div class="p-4 bg-white">
+            <h3 class="font-bold">Kelas UI/UX</h3>
+            <p class="text-sm text-gray-600">Suasanana kelas UI/UX</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Baris Bawah (4 Gambar) -->
+      <div class="slick-slider slick-bottom w-full max-w-5xl mx-auto">
+        <!-- Card 5 -->
+        <div class="gallery-card">
+          <img
+            src="./images/galery-6.jpeg"
+            alt="Gallery Image 4"
+            loading="lazy"
+          />
+          <div class="p-4 bg-white">
+            <h3 class="font-bold">Image 4</h3>
+            <p class="text-sm text-gray-600">Description for image 4</p>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="gallery-card">
+          <img
+            src="./images/galery-7.jpeg"
+            alt="Gallery Image 5"
+            loading="lazy"
+          />
+          <div class="p-4 bg-white">
+            <h3 class="font-bold">Image 5</h3>
+            <p class="text-sm text-gray-600">Description for image 5</p>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="gallery-card">
+          <img
+            src="./images/galery-8.jpeg"
+            alt="Gallery Image 6"
+            loading="lazy"
+          />
+          <div class="p-4 bg-white">
+            <h3 class="font-bold">Image 6</h3>
+            <p class="text-sm text-gray-600">Description for image 6</p>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="gallery-card">
+          <img
+            src="./images/galery-9.jpeg"
+            alt="Gallery Image 7"
+            loading="lazy"
+          />
+          <div class="p-4 bg-white">
+            <h3 class="font-bold">Image 7</h3>
+            <p class="text-sm text-gray-600">Description for image 7</p>
+          </div>
+        </div>
+
+        <!-- Card 9 (Duplikat untuk carousel kontinyu) -->
+        <div class="gallery-card">
+          <img
+            src="./images/galery-3.jpeg"
+            alt="Gallery Image 4"
+            loading="lazy"
+          />
+          <div class="p-4 bg-white">
+            <h3 class="font-bold">Image 4</h3>
+            <p class="text-sm text-gray-600">Description for image 4</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="bg-gray-100 py-16 px-6">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8 py-16">FAQ</h2>
+        <div class="mt-8 text-left max-w-2xl mx-auto">
+          <!-- FAQ Items -->
+          <div class="mb-4 border-b border-gray-300 pb-4">
+            <h3
+              class="font-semibold cursor-pointer flex justify-between items-center py-2"
+              onclick="toggleAnswer(0)"
+            >
+              Apa itu ISC?
+              <span class="text-xl transition-transform duration-300">+</span>
+            </h3>
+            <p class="text-gray-600 mt-2 hidden">
+              ISC adalah Informatics Study Club yang di bentuk untuk mewadahi mahasiswa khushnya mahasiwa Teknik Informatika
+            </p>
+          </div>
+
+          <div class="mb-4 border-b border-gray-300 pb-4">
+            <h3
+              class="font-semibold cursor-pointer flex justify-between items-center py-2"
+              onclick="toggleAnswer(1)"
+            >
+              Bagaimana cara bergabung?
+              <span class="text-xl transition-transform duration-300">+</span>
+            </h3>
+            <p class="text-gray-600 mt-2 hidden">
+              Silahkan patau website kami atau sosial mendia kami nanti akan kami infokan jika IDC membuka Open Recruitment.
+            </p>
+          </div>
+
+          <div class="mb-4 border-b border-gray-300 pb-4">
+            <h3
+              class="font-semibold cursor-pointer flex justify-between items-center py-2"
+              onclick="toggleAnswer(2)"
+            >
+              Apakah ISC terbuka untuk semua jurusan?
+              <span class="text-xl transition-transform duration-300">+</span>
+            </h3>
+            <p class="text-gray-600 mt-2 hidden">
+              Tidak ya, sesuai dengan namanya ISC hanya berfokus dan hanya bisa di ikuti oleh mahasiswa Teknik Informatika
+            </p>
+          </div>
+
+          <div class="mb-4 border-b border-gray-300 pb-4">
+            <h3
+              class="font-semibold cursor-pointer flex justify-between items-center py-2"
+              onclick="toggleAnswer(3)"
+            >
+              Apa saja kegiatan yang dilakukan ISC?
+              <span class="text-xl transition-transform duration-300">+</span>
+            </h3>
+            <p class="text-gray-600 mt-2 hidden">
+              ISC menyelenggarakan seminar, workshop, kompetisi, dan berbagai
+              kegiatan sosial.
+            </p>
+          </div>
+
+          <div class="mb-4 border-b border-gray-300 pb-4">
+            <h3
+              class="font-semibold cursor-pointer flex justify-between items-center py-2"
+              onclick="toggleAnswer(4)"
+            >
+              Apakah ada biaya untuk bergabung dengan ISC?
+              <span class="text-xl transition-transform duration-300">+</span>
+            </h3>
+            <p class="text-gray-600 mt-2 hidden">
+              Tidak, bergabung dengan ISC gratis, dan bayarpun paling bayar kas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .gallery-card {
+        width: 16rem; /* w-64 */
+        height: 20rem; /* h-80 */
+        margin: 0 10px; /* Gap antar card */
+        overflow: hidden;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .gallery-card:hover {
+        transform: scale(1.05);
+      }
+
+      .gallery-card img {
+        width: 100%;
+        height: 75%;
+        object-fit: cover;
+      }
+    </style>
+
+<!-- Footer -->
+<footer id="contact" class="bg-gray-900 text-white py-12">
+  <div class="container mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Quick Navigation -->
+      <div class="text-center md:text-left">
+        <h2 class="text-xl font-bold mb-4">Quick Navigation</h2>
+        <ul class="space-y-2">
+          <li>
+            <a href="#home" class="hover:text-blue-400 transition">LandingPage</a>
+          </li>
+          <li>
+            <a href="#about" class="hover:text-blue-400 transition">About</a>
+          </li>
+          <li>
+            <a href="#galery" class="hover:text-blue-400 transition">Gallery</a>
+          </li>
+          <li>
+            <a href="#faq" class="hover:text-blue-400 transition">FAQ</a>
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="text-center">
+        <h2 class="text-xl font-bold mb-4">Contact Us</h2>
+        <p class="text-sm mb-2">
+          Email:
+          <a
+            href="mailto:info@isc.com"
+            class="underline hover:text-blue-400 transition"
+            >info@isc.com</a
+          >
+        </p>
+        <p class="text-sm mb-2">
+          Phone:
+          <a
+            href="tel:+6281234567890"
+            class="underline hover:text-blue-400 transition"
+            >+62 812-3456-7890</a
+          >
+        </p>
+        <p class="text-sm">
+          Jl. Raya Puspitek, Buaran, Kec. Pamulang, Kota Tangerang Selatan, Banten 15310, Indonesia.
+        </p>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="text-center md:">
+        <h2 class="text-xl font-bold mb-4">Follow Us</h2>
+        <div class="flex justify-center md:justify-start space-x-4">
+          <a href="https://www.instagram.com/isc.unpam/" class="hover:text-pink-400 transition">
+            <i class="fa-brands fa-instagram text-2xl"></i>
+          </a>
+          <a href="#" class="hover:text-blue-300 transition">
+            <i class="fa-brands fa-linkedin text-2xl"></i>
+          </a>
+          <a href="#" class="hover:text-gray-400 transition">
+            <i class="fa-brands fa-github text-2xl"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center mt-8 pt-8 border-t border-gray-800">
+      <p class="text-sm text-gray-400">
+        &copy; 2025 ISC. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+    <!-- Custom JS -->
+    <script src="./js/main.js"></script>
+    <script src="./js/carausel.js"></script>
+  </body>
+</html>

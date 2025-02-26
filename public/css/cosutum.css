@@ -1,0 +1,6 @@
+#menu a.active {
+    color: #1a365d; /* Warna biru gelap */
+    font-weight: bold;
+    border-bottom: 2px solid #1a365d;
+  }
+  
